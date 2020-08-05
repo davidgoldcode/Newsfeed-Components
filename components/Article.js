@@ -86,6 +86,22 @@ const data = [
   }
 ];
 
+let myArticles = [{
+  title: `This is David's first paragraph`,
+  date: `August 5th, 2020`,
+  firstParagraph: `Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.`,
+  secondParagraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur`,
+  thirdParagraph: `Lorem Ipsum is the single greatest threat. We are not - we are not keeping up with other websites. Lorem Ipsum best not make any more threats to your website. It will be met with fire and fury like the world has never seen. Does everybody know that pig named Lorem Ipsum? An ‘extremely credible source’ has called my office and told me that Barack Obama’s placeholder text is a fraud.`,
+}, 
+{
+  title: `My second paragraph`,
+  date: `August 6th, 2020`,
+  firstParagraph: `We are going to make placeholder text great again. Greater than ever before.`,
+  secondParagraph: `I think my strongest asset maybe by far is my temperament. I have a placeholding temperament. He’s not a word hero. He’s a word hero because he was captured. I like text that wasn’t captured. We are going to make placeholder text great again. Greater than ever before. I was going to say something extremely rough to Lorem Ipsum, to its family, and I said to myself, "I can't do it. I just can't do it. It's inappropriate. It's not nice."`,
+  thirdParagraph: `An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. You have so many different things placeholder text has to be able to do, and I don't believe Lorem Ipsum has the stamina.`,
+}]
+
+
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
   Your component is a function that takes an article object as its only argument,
@@ -177,3 +193,4 @@ function allArticles(theData) {
 }
 
 allArticles(data);
+allArticles(myArticles); // added my own
