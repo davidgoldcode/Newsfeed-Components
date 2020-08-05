@@ -140,7 +140,6 @@ function articleMaker(dataObj) {
   div.appendChild(paragraphThree);
   div.appendChild(span);
 
-  debugger
   //add event listener to span.expandButton
   span.addEventListener('click', function() {
     div.classList.toggle('article-open');
@@ -148,8 +147,6 @@ function articleMaker(dataObj) {
 
   return div;
 } 
-
-articleMaker({title: 'cool'})
 
 /*
 Step 3: Don't forget to return something from your function!
@@ -159,16 +156,24 @@ to create a div.article element and append it to the DOM inside div.articles (se
 */ 
 
 //step 4: 
+debugger
 const body = document.querySelector('body');
 
-data.forEach(indObj => {
-  const theArticle = articleMaker(indObj);
-  body.appendChild(theArticle);
-})
-  
-
+// data.forEach(indObj => {
+//   const theArticle = articleMaker(indObj);
+//   body.appendChild(theArticle);
+// })
   
 /*
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+function allArticles(theData) {
+  theData.forEach(indObj => {
+    const theArticle = articleMaker(indObj);
+    body.appendChild(theArticle);
+  })
+}
+
+allArticles(data);
